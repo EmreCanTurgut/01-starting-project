@@ -1,0 +1,15 @@
+import CoreConcept from "./CoreConcept";
+import { CORE_CONCEPTS } from "../data-with-examples";
+export default function CoreConcepts(){
+    return(
+        
+        <section id="core-concepts">
+          <h2>Core Concept</h2>
+          <ul>
+          {CORE_CONCEPTS.map((conseptItem)=>(<CoreConcept key={conseptItem.title} {...conseptItem}/>))}
+
+            </ul>
+        </section>
+  
+    );
+}
